@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Neonwave – Custom Music for Brands</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* LOADER */
+#loader {
+    position: fixed;
+    inset: 0;
+    background: #0b0a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader {
+    width: 70px;
+    height: 70px;
+    border: 4px solid rgba(255,255,255,0.15);
+    border-top: 4px solid #8cfffb;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #0b0a1a, #15143a, #0f0c29);
+    color: #fff;
+    text-align: center;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 16px 110px;
+    animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* TITLES */
+h1 {
+    font-size: 2.7rem;
+    color: #8cfffb;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 1.15rem;
+    color: #bfbfbf;
+    margin-bottom: 35px;
+}
+
+/* BOX */
+.box {
+    background: rgba(255,255,255,0.06);
+    border-radius: 20px;
+    padding: 26px;
+    margin-bottom: 26px;
+}
+
+.box p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* PRICE */
+.price {
+    font-size: 2.3rem;
+    color: #ffd86b;
+    font-weight: bold;
+}
+
+/* STORY */
+.story {
+    background: rgba(0,0,0,0.25);
+    border-left: 3px solid #8cfffb;
+    text-align: left;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #e0e0e0;
+}
+
+.story strong {
+    color: #8cfffb;
+}
+
+/* BUTTONS */
+.buttons {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(10,9,25,0.95);
+    padding: 12px;
+    display: flex;
+    gap: 10px;
+    z-index: 100;
+}
+
+.btn {
+    flex: 1;
+    padding: 14px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    background: linear-gradient(135deg, #8cfffb, #6a5acd);
+}
+
+.btn-donate {
+    background: linear-gradient(135deg, #ffd86b, #ff9f1c);
+}
+
+/* NOTICE */
+.notice {
+    margin-top: 25px;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+    .buttons {
+        position: static;
+        background: none;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .btn {
+        max-width: 280px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+    <div class="loader"></div>
+</div>
+
+<div class="container">
+
+    <h1>NEONWAVE</h1>
+    <h2>Custom Music & Songs for Brands</h2>
+
+    <!-- 1️⃣ WHAT YOU DO -->
+    <div class="box">
+        <p>👋 Welcome to <strong>Neonwave</strong>.</p>
+        <p>I create <strong>custom music content for brands worldwide</strong>.</p>
+        <p>
+            👉 Lyrics provided by you<br>
+            👉 Or full creation (lyrics + music)
+        </p>
+        <p>🎯 Turn your brand identity into a <strong>memorable song</strong>.</p>
+    </div>
+
+    <!-- 2️⃣ PRICING -->
+    <div class="box">
+        <p>🎬 Video included</p>
+        <p>⏱️ 1 to 1:30 minute (or more)</p>
+        <p>🎥 Unlimited takes</p>
+        <div class="price">$5</div>
+        <p>All included – final price</p>
+    </div>
+
+    <!-- 3️⃣ STORY -->
+    <div class="box story">
+        <p>
+            This project didn’t start in a studio.<br><br>
+
+            Right now, I’m working with limited tools and an old computer.  
+            I want to buy a new PC to push this project further.<br><br>
+
+            One day, the idea came to me:  
+            <strong>why not create music for brands with what I already have?</strong><br><br>
+
+            Neonwave was born from that moment.  
+            And this is only the beginning.<br><br>
+
+            When I get a new PC,  
+            <strong>I’ll do this 2× better.</strong>
+        </p>
+    </div>
+
+    <p class="notice">
+        (Notice: music is created with AI)
+    </p>
+
+    <footer style="margin-top:40px;font-size:0.75rem;opacity:0.5;">
+        © 2026 Neonwave
+    </footer>
+
+</div>
+
+<!-- BUTTONS -->
+<div class="buttons">
+    <a class="btn" href="https://wa.me/212775623782" target="_blank">📲 WhatsApp</a>
+    <a class="btn btn-donate" href="https://www.paypal.com/paypalme/RayaneDahnane2506" target="_blank">💛 Donate</a>
+</div>
+
+<script>
+window.addEventListener("load", () => {
+    document.getElementById("loader").style.display = "none";
+});
+</script>
+
+</body>
+</html>
